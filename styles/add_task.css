@@ -1,0 +1,91 @@
+*{
+font-family: 'Montserrat';
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style-type: none;
+outline: 0 !important;
+}
+.add__task__form{
+display:flex;
+justify-content: center;
+}
+.add__task__form input,textarea {
+padding: 20px;
+border: 1px solid gray;
+border-radius: 10px;
+}
+h1{
+margin: 0 auto;
+text-align: center;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+.date{
+width: 160px;
+}
+.btn{
+border:1px solid ;
+border-radius: 20px;
+width: 205px;
+background-color: #FFF;
+padding: 20px;
+cursor: pointer;
+}
+.btn:hover{
+color:#FFF;
+background-color: #000;
+transition: 0.3s ease;
+}
+td{
+padding: 10px;
+}
+header{
+padding-top: 20px;
+max-width: 1820px;
+margin: 0 auto;
+padding-bottom: 20px;
+}
+ul{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.nav__left{
+display: flex;
+/* justify-content:flex-start; */
+align-items: center;
+}
+.nav__left li a{
+padding: 10px;
+margin-left: 10px;
+}
+.nav__right{
+display: flex;
+/* justify-content: flex-end; */
+align-items: center;
+}
+.nav__right li a{
+margin:20px;
+}
+header ul li a{
+font-style: normal;
+font-weight: 900;
+font-size: 0.8em;
+line-height: 24px;
+color: #000;
+}
+header ul li a:hover{
+transition: 0.2s ease;
+background-color: #000;
+color: #FFF;
+}
+footer{
+    padding-top: 50px;
+    text-align: center;
+}
