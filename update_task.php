@@ -38,7 +38,7 @@
             <table>
                 <tr>
                     <td>Название задачи</td>
-                    <td> <input placeholder="Название задачи" name="name" type="text" maxlength="32"></td>
+                    <td> <input id="name_IS" placeholder="Название задачи"  name="name" type="text" maxlength="32"></td>
                 </tr>
                 <tr>
                     <td>Кто поставил задачу</td>
@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td>Описание задачи</td>
-                    <td><textarea placeholder="Описание" name="description" type="text" maxlength="150"> </textarea></td>
+                    <td><textarea  id="editable" placeholder="Описание" name="description" type="text" maxlength="150"> </textarea></td>
                 </tr>
                 <tr>
                     <td> Дата начала</td>
@@ -75,5 +75,19 @@
         </form>
     </main>
     <?php require "blocks/footer.php" ?> 
+    <script>
+        if (localStorage.getItem('name') !== null) {
+      document.getElementById('name_IS').value = localStorage.getItem('name');
+    }
+    document.addEventListener('keydown', function(e) {
+      localStorage.setItem('name', document.getElementById('name_IS').value);
+    });
+    if (localStorage.getItem('text') !== null) {
+      document.getElementById('editable').value = localStorage.getItem('text');
+    }
+    document.addEventListener('keyup', function(e) {
+      localStorage.setItem('text', document.getElementById('editable').value);
+    });
+  </script>
 </body>
 </html>
