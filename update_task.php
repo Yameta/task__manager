@@ -1,4 +1,3 @@
-
 <?php
     if(isset($_POST["name"]) && isset($_POST["assigner"]) && isset($_POST["assigner_email"]) && isset($_POST["performer"]) && isset($_POST["performer_email"]) && isset($_POST["description"]) && isset($_POST["begin"]) && isset($_POST["deadline"])){
         require "systems.php";
