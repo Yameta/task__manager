@@ -49,8 +49,7 @@
                         <td><?=$item["task_description"]?></td>
                         <td><time datetime="<?=$item["beginning"]?>"><?=date("j F Y \г\. \в H:i", strtotime($item["beginning"]))?></time></td>
                         <td><time datetime="<?=$item["deadline"]?>"><?=date("j F Y \г\. \в H:i", strtotime($item["deadline"]))?></time> </td>
-                        <td>
-                            
+                        <td> 
                         <?php if(checkRule() >= 60): ?>
                             <a href="update_task.php?id=<?=$item["id_task"]?>">Изменить/</a>
                             <a href="delete_task.php?id=<?=$item["id_task"]?>">Удалить</a>

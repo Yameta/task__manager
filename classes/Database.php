@@ -72,7 +72,7 @@
             $rslt->execute((array)$parm);
             $rslt = $rslt->fetchAll(PDO::FETCH_NUM);
             $count = 0;
-            foreach ($rslt as $row) {
+            foreach ($rslt as $item) {
                $count++;
             }
             return $count;
