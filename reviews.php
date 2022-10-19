@@ -52,7 +52,8 @@ if(!isset($_SESSION["id"])){
 		<label for="star-1" title="Оценка «1»"></label>
 	</div>
 	<input class="author" type="text" name="name" placeholder="Ваше имя" autocomplete="off" required>
-	<textarea type="text" name="text" placeholder="Отзыв" autocomplete="off" required maxlength="150"> </textarea>
+	<!-- <input type="range" min="0" max="11" value="7" step="1" orient="vertical"> -->
+	<textarea type="text" name="text" placeholder="Отзыв" autocomplete="off" required > </textarea>
 	<button  class="submit" type="submit">Отправить</button>
 	</form>
 

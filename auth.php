@@ -1,3 +1,7 @@
+<?php
+require_once "systems.php";
+global $pdo;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +22,12 @@
         <button class="btn"type="submit">Войти</button>
         </br>
         </br>
+        <?php 
+            if (isset ($_SESSION['message'])) {
+                echo '<p class=msg>' . $_SESSION['message'] . ' </p>';
+            }
+            unset($_SESSION['message']);
+        ?>
         <a href="reg.php">Зарегистрироваться</a>
         </br>
         </br>

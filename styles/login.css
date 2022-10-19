@@ -43,3 +43,9 @@ a:hover{
     transition: 0.2s ease ;
     color: aqua;
     }
+p{
+margin-top: 20px;
+text-align: center;
+color:red;
+margin-bottom: 50px;
+}

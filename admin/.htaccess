@@ -1,0 +1,5 @@
+#Protect Directory
+AuthName "Admin panel"
+AuthType Basic
+AuthUserFile C:/xampp/htdocs/task_manager/admin/.htpasswd
+Require valid-user
